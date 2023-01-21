@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+  font-family: "VT323", monospace;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.block {
+  display: block !important;
+}
+
+.container {
+  max-width: 575px;
+}
+
+.row {
+  display: flex;
+}
+
+.col-full {
+  width: 100%;
+}
+
+.col-full-80vh {
+  width: 100%;
+  height: 80vh;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
