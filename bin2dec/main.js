@@ -5,7 +5,20 @@ var $button = document.querySelector('.convert-button');
 var $decimalResult = document.querySelector('.decimal-result');
 var binaryString = '';
 function inputHandler(event) {
-  binaryString = event.target.value;
+  for (var i = 0; i < event.target.value.length; i++) {
+    if (event.target.value[i] === '0' || event.target.value[i] === '1') {
+      $input.classList.remove('red-border');
+    } else {
+      event.target.value = event.target.value.slice(0, i);
+      $input.classList.add('red-border');
+      break;
+    }
+  }
+  if (event.target.value.length > 8) {
+    event.target.value = event.target.value.slice(0, 8);
+  } else {
+    binaryString = event.target.value;
+  }
   return binaryString;
 }
 $input.addEventListener('input', inputHandler);

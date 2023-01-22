@@ -18,6 +18,17 @@ input {
   font-size: 1.8rem;
   font-family: "VT323", monospace;
   letter-spacing: 1rem;
+  appearance: none;
+}
+
+.red-border {
+  border: 2px solid red;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 input:focus-visible {
