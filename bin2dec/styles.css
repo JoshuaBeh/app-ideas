@@ -15,10 +15,24 @@ input {
   border: 2px solid rgb(0 235 9);
   background-color: black;
   color: rgb(0 235 9);
-  font-size: 1.4rem;
+  font-size: 1.8rem;
+  font-family: "VT323", monospace;
   letter-spacing: 1rem;
 }
 
 input:focus-visible {
   outline: none;
+}
+
+.margin-top-20 {
+  margin-top: 20px;
+}
+
+.convert-button {
+  background-color: black;
+  border: 2px solid rgb(0 235 9);
+  border-radius: 8px;
+  color: rgb(0 235 9);
+  font-family: "VT323", monospace;
+  font-size: 1.5rem;
 }
