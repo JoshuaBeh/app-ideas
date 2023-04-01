@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-var gameImages = [];
+var gameImages = ['/images/apple.jpg', '/images/banana.jpg'];
 
 // eslint-disable-next-line no-unused-vars
 var $cardGameUl = document.querySelector('#card-game');
@@ -13,3 +13,9 @@ function renderCardGame() {
 
   return li;
 }
+
+const $playbutton = document.querySelector('.play-button');
+function playHandler() {
+  renderCardGame();
+}
+$playbutton.addEventListener('click', playHandler);
